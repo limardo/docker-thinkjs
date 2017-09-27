@@ -1,0 +1,9 @@
+version: '3'
+services:
+  server:
+    build: .
+    command: npm start
+    volumes:
+      - .:/app
+    ports:
+      - 8360:8360
