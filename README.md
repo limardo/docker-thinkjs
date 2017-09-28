@@ -6,6 +6,12 @@ Create new project
 docker-compose run server thinkjs new .
 ```
 
+install dependencies
+
+```bash
+docker-compose run server npm install
+```
+
 And run 
 
 ```bash

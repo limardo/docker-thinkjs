@@ -7,3 +7,12 @@ services:
       - .:/app
     ports:
       - 8360:8360
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=password 
+    ports:
+      - 27017:27017
